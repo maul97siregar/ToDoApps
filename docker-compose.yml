@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  todoapp-api:
+    build:
+      context: .
+      dockerfile: ToDoApp.Api/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./ToDoApp.Api/todo.sql:/app/todo.sql
+      - ./data-protection-keys:/home/app/.aspnet/DataProtection-Keys
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+networks:
+  default:
+    driver: bridge
