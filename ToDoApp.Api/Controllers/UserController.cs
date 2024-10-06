@@ -34,7 +34,6 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel login)
         {
@@ -51,7 +50,6 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] string userId)
         {

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("713135d1-4c7d-4531-9202-e4baceffe191")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToDoApp.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56df751a2b158d69327e05d0d693a05bebb32885")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28c59dab4f2c51fd3688d1b888148a6dcfa86625")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToDoApp.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToDoApp.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

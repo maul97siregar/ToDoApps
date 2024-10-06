@@ -13,6 +13,15 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 
+  todoapp-ui:
+    build:
+      context: .
+      dockerfile: ToDoApp.UI/Dockerfile 
+    ports:
+      - "8081:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
 networks:
   default:
     driver: bridge

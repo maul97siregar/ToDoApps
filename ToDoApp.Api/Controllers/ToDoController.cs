@@ -33,7 +33,6 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetAll(string userId)
         {
@@ -48,7 +47,6 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
         [HttpPut("edit/{userId}")]
         public async Task<IActionResult> Update(string userId, [FromBody] ToDoItem toDo)
         {
@@ -64,7 +62,7 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPatch("mark/{userId}")]
         public async Task<IActionResult> Mark(string userId, [FromBody] int status)
         {
@@ -80,7 +78,7 @@ namespace ToDoApp.Api.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpDelete("delete/{userId}")]
         public async Task<IActionResult> Delete(string userId)
         {

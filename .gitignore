@@ -1,0 +1,7 @@
+# Mengabaikan direktori bin dan obj
+bin/
+obj/
+debug/
+*.vs
+*.vs/
+*.pdb

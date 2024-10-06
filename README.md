@@ -49,6 +49,8 @@ To migrate and update the database, follow these steps:
    ```bash
    docker-compose up --build
 
+   ![alt text](Screenshoot/docker.png)
+
 ### Option 2: Running Locally
 1. Open Visual Studio 2022 and load the `Project.sln` solution file.
 2. Set the startup project item, you can run multiple startup for API and UI or can different winndow:
@@ -120,7 +122,29 @@ To migrate and update the database, follow these steps:
 - **To-Do Deletion**: 
   - Users can delete any unmarked To-Do activities they no longer wish to keep, ensuring their To-Do list remains relevant and manageable.
 
-## Error Handling and Logging
-    ![alt text](Screenshoot/errorHandling.png)
+## Technical Requirements
 
-    ![alt text](Screenshoot/errorPostmant.png)
+1. **ASP.NET Core 8.0**: 
+   - The application is developed using ASP.NET Core 8.0, leveraging its robust features for building modern web applications.
+
+2. **UI Framework**: 
+   - For the user interface, I used Blazor
+
+3. **Entity Framework Core**: 
+   - Data access is managed using Entity Framework Core, an ORM that simplifies database operations. The application uses SQLite as the database for its lightweight and file-based storage capabilities.
+
+4. **Error Handling and Logging**: 
+   - The application implements proper error handling and logging mechanisms to capture and log errors gracefully, ensuring that users receive meaningful feedback without exposing sensitive information.
+     ![alt text](Screenshoot/errorHandling.png)
+
+     ![alt text](Screenshoot/errorPostmant.png)
+
+5. **Unit Testing**: 
+   - Comprehensive unit test scripts are written to ensure the functionality of the application. These tests validate that all components work as expected and help maintain code quality.
+     ![alt text](Screenshoot/UT.png)
+
+6. **Docker**: 
+   - The application is containerized using Docker, allowing for consistent deployment across different environments. This simplifies the setup process and ensures that all dependencies are managed effectively.
+
+7. **Performance**: 
+   - The application is designed to ensure that the response time remains under 1 second for loading data or performing any update actions on To-Do items. This performance metric is particularly important when handling large datasets, such as 1 million records with up to 10 concurrent users.

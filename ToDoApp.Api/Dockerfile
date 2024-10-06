@@ -10,10 +10,15 @@ RUN dotnet restore "./ToDoApp.Api/ToDoApp.Api.csproj"
 COPY . .
 WORKDIR "/src/ToDoApp.Api"
 RUN dotnet build "./ToDoApp.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
-# migrasi kesayangan <3
+
+# Install dotnet-ef tool globally
 RUN dotnet tool install --global dotnet-ef
+
+# Set the PATH for the tool
 ENV PATH="$PATH:/root/.dotnet/tools"
-RUN dotnet-ef database update --project ./
+
+# Run migrations using the correct project file
+RUN dotnet ef database update --project "./ToDoApp.Api.csproj"
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
@@ -27,7 +32,5 @@ COPY --from=publish /app/publish .
 EXPOSE 8080
 COPY --from=build /src/ToDoApp.Api/todo.db .
 
-
-# Tambahkan perintah untuk menjalankan migrasi sebelum menjalankan aplikasi
+# Add the command to run the application
 ENTRYPOINT ["dotnet", "ToDoApp.Api.dll"]
-
