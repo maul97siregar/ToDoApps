@@ -5,3 +5,8 @@ debug/
 *.vs
 *.vs/
 *.pdb
+*.tmp
+*.log
+*.user
+*.suo
+.vs/

@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ToDoApp.Api/Dockerfile
     ports:
-      - "8080:8080"
+      - "8080:80"  # Sesuaikan dengan port yang digunakan dalam Dockerfile
     volumes:
       - ./ToDoApp.Api/todo.sql:/app/todo.sql
       - ./data-protection-keys:/home/app/.aspnet/DataProtection-Keys
@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: ToDoApp.UI/Dockerfile 
     ports:
-      - "8081:8081"
+      - "8081:80"  # Sesuaikan dengan port yang digunakan dalam Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 

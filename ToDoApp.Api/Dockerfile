@@ -11,7 +11,7 @@ COPY . .
 WORKDIR "/src/ToDoApp.Api"
 RUN dotnet build "./ToDoApp.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Install dotnet-ef tool globally
+# Install dotnet-ef tool globally with specified project file
 RUN dotnet tool install --global dotnet-ef
 
 # Set the PATH for the tool
@@ -24,13 +24,10 @@ FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./ToDoApp.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-FROM build as migrations
-
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8080
 COPY --from=build /src/ToDoApp.Api/todo.db .
 
-# Add the command to run the application
 ENTRYPOINT ["dotnet", "ToDoApp.Api.dll"]
