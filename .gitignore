@@ -1,12 +1,25 @@
-# Mengabaikan direktori bin dan obj
+# See https://git-scm.com/docs/gitignore for more information
+# Ignore Visual Studio temporary files
 bin/
 obj/
 debug/
-*.vs
-*.vs/
-*.pdb
-*.tmp
-*.log
-*.user
 *.suo
-.vs/
+*.user
+*.tmp
+*.pdb
+*.cache
+*.suo
+*.sln.docstates
+
+# Ignore Visual Studio/Xamarin output
+**/bin/
+**/obj/
+
+# Ignore other IDE specific files
+*.vshost.exe
+*.appxrecipe
+*.user
+*.vspscc
+
+# Ignore caches and logs
+**/packages/
