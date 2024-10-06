@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Test Insura\\ToDoApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|d:\\test insura\\todoapp\\todoapp.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|d:\\test insura\\todoapp\\todoapp.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|solutionrelative:todoapp.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|d:\\test insura\\todoapp\\todoapp.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|solutionrelative:todoapp.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|d:\\test insura\\todoapp\\todoapp.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|solutionrelative:todoapp.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|d:\\test insura\\todoapp\\todoapp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|solutionrelative:todoapp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|d:\\test insura\\todoapp\\todoapp.ui\\todoapp.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FD22677-F1EB-42E6-BCA1-4A5CE8BEC9AC}|ToDoApp.UI\\ToDoApp.UI.csproj|solutionrelative:todoapp.ui\\todoapp.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|d:\\test insura\\todoapp\\todoapp.api\\todoapp.api.tests\\controllers\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\todoapp.api.tests\\controllers\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|d:\\test insura\\todoapp\\todoapp.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|d:\\test insura\\todoapp\\todoapp.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77265EF1-2B40-4381-91EC-8F1BFFA31C38}|ToDoApp.Api\\ToDoApp.Api.csproj|d:\\test insura\\todoapp\\todoapp.api\\migrations\\20241004062841_addsessionwithjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,11 +118,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Components\\App.razor",
+              "RelativeDocumentMoniker": "ToDoApp.UI\\Components\\App.razor",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Components\\App.razor",
+              "RelativeToolTip": "ToDoApp.UI\\Components\\App.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T17:26:06.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "ToDoApp.UI\\appsettings.json",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\appsettings.json",
+              "RelativeToolTip": "ToDoApp.UI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T17:19:03.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ToDoApp.UI\\Program.cs",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Program.cs",
+              "RelativeToolTip": "ToDoApp.UI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T17:18:58.918Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ToDoApp.UI.csproj",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\ToDoApp.UI.csproj",
+              "RelativeDocumentMoniker": "ToDoApp.UI\\ToDoApp.UI.csproj",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\ToDoApp.UI.csproj",
+              "RelativeToolTip": "ToDoApp.UI\\ToDoApp.UI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-05T17:18:51.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ToDoApp.Api.AssemblyInfo.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\obj\\Debug\\net8.0\\ToDoApp.Api.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\obj\\Debug\\net8.0\\ToDoApp.Api.AssemblyInfo.cs",
@@ -110,12 +179,11 @@
               "RelativeToolTip": "ToDoApp.Api\\obj\\Debug\\net8.0\\ToDoApp.Api.AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:28:01.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:28:01.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "ToDoServiceTests.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\ToDoServiceTests.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\ToDoServiceTests.cs",
@@ -123,12 +191,36 @@
               "RelativeToolTip": "ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\ToDoServiceTests.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:16:39.902Z",
+              "WhenOpened": "2024-10-04T18:16:39.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ToDoApp.Api\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA5wBwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T08:17:51.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ToDoApp.UI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ToDoApp.UI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T17:19:07.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ToDoControllerTests.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\ToDoControllerTests.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\ToDoControllerTests.cs",
@@ -140,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "UserServiceTests.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\UserServiceTests.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\UserServiceTests.cs",
@@ -148,25 +240,23 @@
               "RelativeToolTip": "ToDoApp.Api\\ToDoApp.Api.Tests\\Services\\UserServiceTests.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAiwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:00:05.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:00:05.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "UserControllerTests.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\UserControllerTests.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\UserControllerTests.cs",
               "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\UserControllerTests.cs",
               "RelativeToolTip": "ToDoApp.Api\\ToDoApp.Api.Tests\\Controllers\\UserControllerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:58:36.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:58:36.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "20241004062841_AddSessionWithJwt.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Migrations\\20241004062841_AddSessionWithJwt.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Migrations\\20241004062841_AddSessionWithJwt.cs",
@@ -178,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Services\\UserServices\\UserService.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Services\\UserServices\\UserService.cs",
@@ -186,12 +276,11 @@
               "RelativeToolTip": "ToDoApp.Api\\Services\\UserServices\\UserService.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAmwHQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T16:50:12.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T16:50:12.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
@@ -199,12 +288,11 @@
               "RelativeToolTip": "ToDoApp.Api\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:28:04.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:28:04.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Dockerfile",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Dockerfile",
@@ -216,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ToDoController.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\ToDoController.cs",
@@ -228,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "ToDoService.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Services\\ToDoServices\\ToDoService.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Services\\ToDoServices\\ToDoService.cs",
@@ -240,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Properties\\launchSettings.json",
@@ -252,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Program.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Program.cs",
@@ -264,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "ToDoItemModel.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Models\\ToDoItemModel.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Models\\ToDoItemModel.cs",
@@ -276,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\WeatherForecastController.cs",
@@ -288,20 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ToDoApp.Api\\Controllers\\UserController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAAEYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T08:17:51.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ToDoApp.Api\\appsettings.Development.json",
@@ -313,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "20241004043918_AddTrackingModel.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Migrations\\20241004043918_AddTrackingModel.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Migrations\\20241004043918_AddTrackingModel.cs",
@@ -325,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Utils\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Utils\\ExceptionMiddleware.cs",
@@ -337,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\appsettings.json",
               "RelativeDocumentMoniker": "ToDoApp.Api\\appsettings.json",
@@ -349,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Utils\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Utils\\AppDbContext.cs",
@@ -361,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "UserModel.cs",
               "DocumentMoniker": "D:\\Test Insura\\ToDoApp\\ToDoApp.Api\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Models\\UserModel.cs",

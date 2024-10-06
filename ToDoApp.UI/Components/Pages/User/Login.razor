@@ -1,0 +1,70 @@
+﻿@page "/"
+@using ToDoApp.UI.DTOs
+@rendermode InteractiveServer
+
+<div class="login-container">
+    <div class="login-form">
+        <EditForm Model="@loginModel" OnValidSubmit="HandleLogin" FormName="LoginForm">
+            <h3 style="text-align: center;">Login</h3>
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="input-field">
+                <label>
+                    <i class="fas fa-user"></i>
+                    <InputText @bind-Value="@loginModel.UserId" placeholder="User Id" class="form-control" />
+                </label>
+                <ValidationMessage For="@(() => loginModel.UserId)" />
+            </div>
+            <div class="input-field">
+                <label>
+                    <i class="fas fa-lock"></i>
+                    <InputText @bind-Value="@loginModel.Password" type="password" placeholder="Password" class="form-control" />
+                </label>
+                <ValidationMessage For="@(() => loginModel.Password)" />
+            </div>
+            <button type="submit" class="btn-submit">SIGN IN</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <NavLink href="/register">Create</NavLink></p>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [Inject]
+    public HttpClient Http { get; set; }
+
+    [Inject]
+    public NavigationManager Navigation { get; set; }
+
+    [Inject]
+    public UserService UserService { get; set; }
+
+    [Inject]
+    public AuthService AuthServicse { get; set; }
+    private UserLoginDto loginModel = new UserLoginDto();
+
+    public bool isLogin = false;
+
+    private async Task HandleLogin()
+    {
+        var resp = await UserService.LoginAsync(loginModel);
+
+        if (resp != null && !string.IsNullOrEmpty(resp.Data?.Token))
+        {
+            await AuthService.SetTokenAsync(resp.Data.Token);
+            isLogin = true;
+
+            // Navigasi ke halaman register setelah berhasil login
+            Navigation.NavigateTo("/register", forceLoad: true);
+        }
+        else
+        {
+            loginError = "Login failed, please check your credentials.";
+        }
+    }
+    private string loginError;
+
+}

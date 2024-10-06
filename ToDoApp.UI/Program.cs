@@ -1,10 +1,20 @@
 using ToDoApp.UI.Components;
+using ToDoApp.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+builder.Services.AddHttpClient();
+
+builder.Services.AddServerSideBlazor()
+        .AddCircuitOptions(options => { options.DetailedErrors = true; });
+
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<ToDoService>();
+builder.Services.AddScoped<AuthService>();
 
 var app = builder.Build();
 

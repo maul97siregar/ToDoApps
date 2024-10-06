@@ -27,3 +27,4 @@ D:\Test Insura\ToDoApp\ToDoApp.UI\obj\Debug\net8.0\refint\ToDoApp.UI.dll
 D:\Test Insura\ToDoApp\ToDoApp.UI\obj\Debug\net8.0\ToDoApp.UI.pdb
 D:\Test Insura\ToDoApp\ToDoApp.UI\obj\Debug\net8.0\ToDoApp.UI.genruntimeconfig.cache
 D:\Test Insura\ToDoApp\ToDoApp.UI\obj\Debug\net8.0\ref\ToDoApp.UI.dll
+D:\Test Insura\ToDoApp\ToDoApp.UI\obj\Debug\net8.0\ToDoApp.UI.sourcelink.json

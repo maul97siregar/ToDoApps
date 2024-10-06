@@ -1,23 +1,47 @@
 ﻿@inherits LayoutComponentBase
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
+@* <div class="page">
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
         <article class="content px-4">
-            @Body
+            @if (isLoggedIn)
+            {
+                <ToDoApp.UI.Components.Pages.User.Login />
+            }
+            else
+            {
+                @Body
+            }
         </article>
     </main>
-</div>
+</div> *@
+
+@if (isLoggedIn)
+{
+    @* <ToDoApp.UI.Components.Pages.User.Login /> *@
+    <NavMenu/>
+}
+else
+{
+    @Body
+}
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
+
+@code {
+    private bool isLoggedIn = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            isLoggedIn = await AuthService.IsLoggedInAsync();
+            StateHasChanged();
+        }
+    }
+}
