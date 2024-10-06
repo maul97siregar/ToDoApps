@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Test Insura/ToDoApp/ToDoApp.UI/Components/Pages/ToDo/Todo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb0RvXFRvZG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Test Insura/ToDoApp/ToDoApp.UI/Components/Pages/User/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyXExvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

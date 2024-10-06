@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\wwwroot\\css\\todo.css",
+      "PackagePath": "staticwebassets\\css\\todo.css"
+    },
+    {
       "Id": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

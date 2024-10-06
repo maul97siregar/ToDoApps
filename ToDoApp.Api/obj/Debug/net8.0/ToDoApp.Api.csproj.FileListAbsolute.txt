@@ -498,3 +498,4 @@ D:\Test Insura\ToDoApp\ToDoApp.Api\obj\Debug\net8.0\refint\ToDoApp.Api.dll
 D:\Test Insura\ToDoApp\ToDoApp.Api\obj\Debug\net8.0\ToDoApp.Api.pdb
 D:\Test Insura\ToDoApp\ToDoApp.Api\obj\Debug\net8.0\ToDoApp.Api.genruntimeconfig.cache
 D:\Test Insura\ToDoApp\ToDoApp.Api\obj\Debug\net8.0\ref\ToDoApp.Api.dll
+D:\Test Insura\ToDoApp\ToDoApp.Api\obj\Debug\net8.0\ToDoApp.Api.sourcelink.json

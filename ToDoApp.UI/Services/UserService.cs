@@ -3,7 +3,6 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using ToDoApp.UI.DTOs;
 
-
 namespace ToDoApp.UI.Services
 {
     public class UserService
@@ -17,23 +16,25 @@ namespace ToDoApp.UI.Services
 
         public async Task<HttpResponseMessage> RegisterAsync(UserRegistrationDto user)
         {
-            return await _httpClient.PostAsJsonAsync("https://localhost:44351/api/User/register", user);
+            // URL relatif
+            return await _httpClient.PostAsJsonAsync("api/User/register", user);
         }
 
         public async Task<UserLoginResponse> LoginAsync(UserLoginDto user)
         {
-            var response = await _httpClient.PostAsJsonAsync("https://localhost:44351/api/User/login", user);
+            // URL relatif
+            var response = await _httpClient.PostAsJsonAsync("api/User/login", user);
 
             if (response.StatusCode != System.Net.HttpStatusCode.OK) return null;
-            var loginResponse = await response.Content.ReadFromJsonAsync<UserLoginResponse>();
 
+            var loginResponse = await response.Content.ReadFromJsonAsync<UserLoginResponse>();
             return loginResponse;
         }
 
         public async Task LogoutAsync()
         {
-            await _httpClient.PostAsync("https://localhost:44351/api/User/logout", null);
+            // URL relatif
+            await _httpClient.PostAsync("api/User/logout", null);
         }
     }
-
 }

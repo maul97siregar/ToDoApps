@@ -9,6 +9,13 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
+            @if (!string.IsNullOrEmpty(loginError))
+            {
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> @loginError
+                </div>
+            }
+
             <div class="input-field">
                 <label>
                     <i class="fas fa-user"></i>
@@ -32,6 +39,7 @@
     </div>
 </div>
 
+
 @code {
     [Inject]
     public HttpClient Http { get; set; }
@@ -54,17 +62,13 @@
 
         if (resp != null && !string.IsNullOrEmpty(resp.Data?.Token))
         {
-            await AuthService.SetTokenAsync(resp.Data.Token);
-            isLogin = true;
-
-            // Navigasi ke halaman register setelah berhasil login
-            Navigation.NavigateTo("/register", forceLoad: true);
+            await AuthService.SetTokenAsync(resp.Data.Token, resp.Data.UserId); // Simpan token dan userId
+            Navigation.NavigateTo("/todo", forceLoad: true);
         }
         else
         {
-            loginError = "Login failed, please check your credentials.";
+            loginError = resp.ToString();
         }
     }
     private string loginError;
-
 }

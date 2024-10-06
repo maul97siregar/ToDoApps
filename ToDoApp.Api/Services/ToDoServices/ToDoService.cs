@@ -86,7 +86,7 @@ namespace ToDoApp.Api.Services.ToDoServices
         {
             try
             {
-                var existingToDo = await GetData(userId);
+                var existingToDo = await _context.ToDoItems.Where(t => t.UserId == userId && t.ActivitiesNo == toDo.ActivitiesNo && !t.IsActive).FirstOrDefaultAsync();
                 if (existingToDo == null) return false;
 
                 existingToDo.Subject = toDo.Subject;

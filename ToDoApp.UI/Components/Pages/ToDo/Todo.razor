@@ -1,0 +1,182 @@
+﻿@page "/todo"
+@using DTOs
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ToDoService ToDoService
+@rendermode InteractiveServer
+
+<div class="todo-container">
+    <div class="todo-add-section">
+        <h3 style="color: white; justify-content:center">Add New ToDo</h3>
+        <input type="text" @bind="newToDo.Subject" placeholder="Subject" class="input-field-Todo" />
+        <input type="text" @bind="newToDo.Description" placeholder="Description" class="input-field-Todo" />
+        <button @onclick="@AddToDo" class="btn-add-todo">Add ToDo</button>
+    </div>
+
+    @foreach (var group in ToDoGroups)
+    {
+        <div class="todo-section">
+            <h3>
+                <span class="status-label @(group.StatusLabel)">@group.Title</span>
+            </h3>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Activities No</th>
+                        <th>Subject</th>
+                        <th>Description</th>
+                        <th>CreatedDate</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in group.PagedItems)
+                    {
+                        <tr>
+                            <td>@item.ActivitiesNo</td>
+                            <td>@item.Subject</td>
+                            <td>@item.Description</td>
+                            <td>@item.CreatedDate</td>
+                            <td>@((ToDoStatus)item.Status)</td>
+                            <td>
+                                <select class="custom-select" @onchange="(e) => UpdateStatus(item, e.Value.ToString())">
+                                    @foreach (var status in Enum.GetValues(typeof(ToDoStatus)).Cast<ToDoStatus>())
+                                    {
+                                        <option value="@status.ToString()" selected="@((ToDoStatus)item.Status == status)">
+                                            @status.ToString()
+                                        </option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <button @onclick="() => DeleteToDo(item)" class="btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button @onclick="() => group.PreviousPage()" disabled="@group.IsFirstPage">Previous</button>
+                <button @onclick="() => group.NextPage()" disabled="@group.IsLastPage">Next</button>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<ToDoGroup> ToDoGroups = new();
+    private ToDoItemDto newToDo = new ToDoItemDto();
+    public string userId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadToDoListAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            userId = await AuthService.GetUserIdAsync();
+            await LoadToDoListAsync();
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadToDoListAsync()
+    {
+        if (!string.IsNullOrEmpty(userId))
+        {
+            var toDoItems = await ToDoService.GetToDoListAsync(userId);
+
+            if (toDoItems != null)
+            {
+                ToDoGroups = new List<ToDoGroup>
+                {
+                    new ToDoGroup("UNMARK", ToDoStatus.Unmarked, "not-started", toDoItems),
+                    new ToDoGroup("DONE", ToDoStatus.Done, "in-progress", toDoItems),
+                    new ToDoGroup("CANCEL", ToDoStatus.Canceled, "review", toDoItems)
+                };
+            }
+        }
+    }
+
+    private async Task AddToDo()
+    {
+        if (!string.IsNullOrEmpty(newToDo.Subject) && !string.IsNullOrEmpty(newToDo.Description))
+        {
+            newToDo.ActivitiesNo = string.Empty;
+            newToDo.UserId = userId;
+            newToDo.Status = 1;
+            newToDo.CreatedDate = DateTime.Now;
+            await ToDoService.CreateToDoAsync(newToDo);
+            await LoadToDoListAsync();
+            newToDo = new ToDoItemDto();
+        }
+        else
+        {
+            Console.WriteLine("Subject or Description cannot be empty.");
+        }
+    }
+
+    private async Task UpdateStatus(ToDoItemDto item, string newStatus)
+    {
+        item.Status = (int)Enum.Parse<ToDoStatus>(newStatus);
+        await ToDoService.EditToDoAsync(userId, item);
+        await LoadToDoListAsync();
+    }
+
+    private async Task DeleteToDo(ToDoItemDto item)
+    {
+        await ToDoService.DeleteToDoAsync(userId, item.ActivitiesNo);
+        await LoadToDoListAsync();
+    }
+
+
+    public class ToDoGroup
+    {
+        public string Title { get; }
+        public string StatusLabel { get; }
+        public List<ToDoItemDto> AllItems { get; private set; }
+        public List<ToDoItemDto> PagedItems { get; private set; }
+        public int CurrentPage { get; private set; }
+        public int PageSize { get; private set; } = 5;
+
+        public ToDoGroup(string title, ToDoStatus status, string statusLabel, List<ToDoItemDto> items)
+        {
+            Title = title;
+            StatusLabel = statusLabel;
+            AllItems = items.Where(i => (ToDoStatus)i.Status == status).ToList();
+            CurrentPage = 0;
+            UpdatePagedItems();
+        }
+
+        public void UpdatePagedItems()
+        {
+            PagedItems = AllItems.Skip(CurrentPage * PageSize).Take(PageSize).ToList();
+        }
+
+        public void NextPage()
+        {
+            if (!IsLastPage)
+            {
+                CurrentPage++;
+                UpdatePagedItems();
+            }
+        }
+
+        public void PreviousPage()
+        {
+            if (!IsFirstPage)
+            {
+                CurrentPage--;
+                UpdatePagedItems();
+            }
+        }
+
+        public bool IsFirstPage => CurrentPage == 0;
+        public bool IsLastPage => (CurrentPage + 1) * PageSize >= AllItems.Count;
+    }
+}

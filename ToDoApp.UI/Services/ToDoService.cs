@@ -17,28 +17,32 @@ namespace ToDoApp.UI.Services
 
         public async Task<List<ToDoItemDto>> GetToDoListAsync(string userId)
         {
-            return await _httpClient.GetFromJsonAsync<List<ToDoItemDto>>($"https://localhost:44351/api/ToDo/testUser");
+            // Menggunakan URL relatif, dengan asumsi BaseAddress sudah disetel
+            return await _httpClient.GetFromJsonAsync<List<ToDoItemDto>>($"api/ToDo/{userId}");
         }
 
         public async Task CreateToDoAsync(ToDoItemDto toDo)
         {
-            await _httpClient.PostAsJsonAsync("https://localhost:44351/api/ToDO", toDo);
+            // URL relatif
+            await _httpClient.PostAsJsonAsync("api/ToDo", toDo);
         }
 
         public async Task EditToDoAsync(string userId, ToDoItemDto toDo)
         {
-            await _httpClient.PutAsJsonAsync($"https://localhost:44351/api/ToDo/edit/{userId}", toDo);
+            // URL relatif
+            await _httpClient.PutAsJsonAsync($"api/ToDo/edit/{userId}", toDo);
         }
 
         public async Task MarkToDoAsync(string userId, string activityId)
         {
-            await _httpClient.PutAsync($"https://localhost:44351/api/ToDO/mark/{userId}", new StringContent(activityId));
+            // Menggunakan StringContent jika API memerlukan body, namun untuk pengiriman ID saja bisa dikirim melalui query atau path
+            await _httpClient.PutAsync($"api/ToDo/mark/{userId}", new StringContent(activityId));
         }
 
         public async Task DeleteToDoAsync(string userId, string activityId)
         {
-            await _httpClient.DeleteAsync($"https://localhost:44351/api/ToDO/delete/{userId}");
+            // URL relatif
+            await _httpClient.DeleteAsync($"api/ToDo/delete/{userId}");
         }
     }
-
 }

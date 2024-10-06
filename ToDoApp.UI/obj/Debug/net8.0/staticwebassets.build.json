@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kFUzReAYUBDWyzsxNeyKLLfmtghIVelYustyXkt+Qyw=",
+  "Hash": "xPHIs/uCsEKiR1TX2QPTEOAnEZZGKBbYlyVx+fdIkek=",
   "Source": "ToDoApp.UI",
   "BasePath": "_content/ToDoApp.UI",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\wwwroot\\css\\todo.css",
+      "SourceId": "ToDoApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\wwwroot\\",
+      "BasePath": "_content/ToDoApp.UI",
+      "RelativePath": "css/todo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\todo.css"
     },
     {
       "Identity": "D:\\Test Insura\\ToDoApp\\ToDoApp.UI\\wwwroot\\favicon.png",

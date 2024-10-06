@@ -28,11 +28,11 @@ namespace ToDoApp.Api.Services.UserServices
             var timeout = TimeSpan.FromMinutes(timeoutMinutes);
 
             var lastLogin = await _context.LoginHistories
-                .Where(u => u.UserId == user.UserId && !user.IsActive)
+                .Where(u => u.UserId == user.UserId)
                 .OrderByDescending(u => u.LoginTime)
                 .FirstOrDefaultAsync();
 
-            if (lastLogin != null && (DateTime.Now - lastLogin.LoginTime) < timeout && lastLogin.IsActive) throw new Exception("User is already logged in. Please log out before logging in again.");
+            //if (lastLogin != null && (DateTime.Now - lastLogin.LoginTime) < timeout && lastLogin.IsActive) throw new Exception("User is already logged in. Please log out before logging in again.");
 
             var token = GenerateToken(user);
             var loginHistory = new LoginHistory

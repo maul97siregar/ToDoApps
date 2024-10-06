@@ -11,6 +11,17 @@ builder.Services.AddHttpClient();
 builder.Services.AddServerSideBlazor()
         .AddCircuitOptions(options => { options.DetailedErrors = true; });
 
+builder.Services.AddHttpClient<ToDoService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:44351/");
+});
+
+builder.Services.AddHttpClient<UserService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:44351/");
+});
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:44351/") });
+
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ToDoService>();
