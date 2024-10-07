@@ -1,3 +1,4 @@
+using ToDoApp.UI;
 using ToDoApp.UI.Components;
 using ToDoApp.UI.Services;
 
@@ -11,17 +12,25 @@ builder.Services.AddHttpClient();
 builder.Services.AddServerSideBlazor()
         .AddCircuitOptions(options => { options.DetailedErrors = true; });
 
-builder.Services.AddHttpClient<ToDoService>(client =>
+
+
+var apiUrl = Environment.GetEnvironmentVariable("TODO_API_URL");
+
+builder.Services.AddHttpClient("ApiClient", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:44351/");
+    client.BaseAddress = new Uri(apiUrl);
 });
 
-builder.Services.AddHttpClient<UserService>(client =>
+if (string.IsNullOrEmpty(apiUrl))
 {
-    client.BaseAddress = new Uri("https://localhost:44351/");
-});
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:44351/") });
+    apiUrl = builder.Configuration["API_URL"];
+}
+if (string.IsNullOrEmpty(apiUrl))
+{
+    apiUrl = "http://localhost:8080";
+}
 
+builder.Services.AddSingleton<ApiEndpoints>(prov => new ApiEndpoints($"{apiUrl}/api"));
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ToDoService>();
