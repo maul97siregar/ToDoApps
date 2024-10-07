@@ -22,7 +22,9 @@ This repository contains a To-Do application built with ASP.NET Core 8.0, Blazor
 
 ## Prerequisites
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+
 - [Docker](https://www.docker.com/products/docker-desktop)
+
 - A code editor (e.g., [Visual Studio Code](https://code.visualstudio.com/))
 
 ## Database Migration and Update
@@ -51,6 +53,8 @@ To migrate and update the database, follow these steps:
 
    ![alt text](Screenshoot/docker.png)
 
+   ![alt text](Screenshoot/Docer2.png.png)
+
 ### Option 2: Running Locally
 1. Open Visual Studio 2022 and load the `Project.sln` solution file.
 2. Set the startup project item, you can run multiple startup for API and UI or can different winndow:
@@ -74,7 +78,9 @@ To migrate and update the database, follow these steps:
 1. Register
     - For root pages is logi, you can click register below button SIGN IN
     - Input UserId, Name, and Password 
+
     (![alt text](Screenshoot/image.png))
+
     - If Success, automated open page Login
 
 2. Login
